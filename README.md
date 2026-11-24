@@ -9,6 +9,7 @@
 - `tools/make_find.py`, `find_template.html` : 회원 찾기 예시 데이터 생성
 - `tools/make_more_pages.py` : 수상자·활동소식·행사일정·자주 묻는 질문 예시 본문 생성
 - `tools/make_member_pages.py` : 본상·자유게시판·로그인·회원가입·사이트맵 예시 본문 생성
+- `tools/make_extra_pages.py` : 자료실 하위 5종·농업정보 3종·약관/방침 3종 예시 본문 생성
 - `assets/krds/` : KRDS 키트 리소스 복사본 — 직접 수정하지 말 것
 - `assets/css/site.css`, `assets/js/site.js` : 사이트 전용 스타일·스크립트
 - 루트 `*.html` : 빌드 결과물 (직접 수정하지 말고 src를 고친 뒤 빌드)
@@ -30,6 +31,9 @@
 | grand-award.html | 새농민 찾기 > 새농민상 본상 수상자 |
 | login.html, join.html | 로그인, 회원가입 |
 | sitemap.html | 사이트맵 |
+| rules.html, video.html, song.html, sign.html, forms.html | 자료실 > 정관·규정, 영상자료, 새농민의 노래, 농장간판, 서식 자료 |
+| policy.html, farming.html, links.html | 농업정보 > 정책 소식, 영농 기술, 관련 기관 |
+| privacy.html, terms.html, noemail.html | 개인정보처리방침, 이용약관, 이메일무단수집거부 (법무 검토 필요) |
 
 ## 빌드·미리보기
 ```
@@ -42,3 +46,8 @@ python tools/build.py
 - 사진: 메인 배경·수상자·회원 사진은 그라데이션 자리표시
 - 데이터: 행사일정, 수상자·회원 이름, 자료 목록, 회원 수 등은 모두 예시
 - 검색·필터·페이지 이동·내려받기: 서버(게시판) 연동 단계에서 구현
+
+## 시안 공유(GitHub Pages)
+- 주소: https://kis4323-png.github.io/saenongmin/
+- 수정 → `python tools/build.py` → `git add -A` → `git commit -m "내용"` → `git push` (1~2분 뒤 반영)
+- 시안 기간에는 검색 노출을 막아둠: header.html의 `robots` 메타 한 줄과 `robots.txt` — 정식 오픈 때 삭제

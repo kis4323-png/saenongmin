@@ -115,6 +115,72 @@ PAGES = {
         None,
         "sitemap.html",
     ),
+    "rules.html": (
+        f"정관 및 제규정 | 자료실 | {SITE}",
+        "(사)한국새농민중앙회 정관과 운영 규정",
+        'archive',
+        "rules.html",
+    ),
+    "video.html": (
+        f"영상자료 | 자료실 | {SITE}",
+        "새농민회 행사와 수상자 이야기를 담은 영상",
+        'archive',
+        "video.html",
+    ),
+    "song.html": (
+        f"새농민의 노래 | 자료실 | {SITE}",
+        "새농민의 노래 음원·악보·가사",
+        'archive',
+        "song.html",
+    ),
+    "sign.html": (
+        f"농장간판 설치 안내 | 자료실 | {SITE}",
+        "새농민상 수상 농가 농장간판 신청 방법",
+        'archive',
+        "sign.html",
+    ),
+    "forms.html": (
+        f"서식 자료 | 자료실 | {SITE}",
+        "공적비·농장간판·회원 관련 신청서 양식",
+        'archive',
+        "forms.html",
+    ),
+    "policy.html": (
+        f"농업 정책 소식 | 농업정보 | {SITE}",
+        "농업인이 알아야 할 정부·기관 정책 소식",
+        'info',
+        "policy.html",
+    ),
+    "farming.html": (
+        f"영농 기술 정보 | 농업정보 | {SITE}",
+        "이달의 농작업과 영농 기술 정보",
+        'info',
+        "farming.html",
+    ),
+    "links.html": (
+        f"관련 기관 바로가기 | 농업정보 | {SITE}",
+        "농업 관련 기관 누리집 모음",
+        'info',
+        "links.html",
+    ),
+    "privacy.html": (
+        f"개인정보처리방침 | {SITE}",
+        "한국새농민중앙회 개인정보처리방침",
+        None,
+        "privacy.html",
+    ),
+    "terms.html": (
+        f"이용약관 | {SITE}",
+        "한국새농민중앙회 누리집 이용약관",
+        None,
+        "terms.html",
+    ),
+    "noemail.html": (
+        f"이메일무단수집거부 | {SITE}",
+        "이메일 주소 무단 수집 거부 안내",
+        None,
+        "noemail.html",
+    ),
 }
 
 
