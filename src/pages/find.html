@@ -1,0 +1,231 @@
+<main id="container" class="sn-sub">
+
+	<div class="sn-sub__top">
+		<div class="inner">
+			<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="home"><a href="index.html" class="txt">홈</a></li>
+					<li><a href="find.html" class="txt">새농민 찾기</a></li>
+					<li><a href="find.html" class="txt" aria-current="page">새농민 회원 찾기</a></li>
+				</ol>
+			</nav>
+			<h2 class="sn-sub__title">새농민 회원 찾기</h2>
+			<p class="sn-sub__desc">지역, 이름, 농장 이름, 주작목으로 전국의 새농민을 찾아보세요.</p>
+		</div>
+	</div>
+
+	<div class="inner sn-sub__body">
+
+		<nav class="krds-side-navigation sn-lnb" aria-label="새농민 찾기 메뉴">
+			<h2 class="lnb-tit">새농민 찾기</h2>
+			<ul class="lnb-list">
+				<li class="lnb-item active"><a href="find.html" class="lnb-btn lnb-link" aria-current="page">새농민 회원 찾기</a></li>
+				<li class="lnb-item"><a href="awards.html" class="lnb-btn lnb-link">이달의 새농민 수상자</a></li>
+				<li class="lnb-item"><a href="grand-award.html" class="lnb-btn lnb-link">새농민상 본상 수상자</a></li>
+			</ul>
+			<div class="sn-lnb__help">
+				<p class="sn-lnb__help-tit">회원 정보 수정 문의</p>
+				<p>사무국 <a href="tel:0220805611">02-2080-5611</a></p>
+				<p class="sn-lnb__help-time">평일 09시~18시</p>
+			</div>
+		</nav>
+
+		<nav class="sn-lnb-mobile" aria-label="새농민 찾기 메뉴">
+			<ul>
+				<li><a href="find.html" aria-current="page">회원 찾기</a></li>
+				<li><a href="awards.html">이달의 새농민</a></li>
+				<li><a href="grand-award.html">본상 수상자</a></li>
+			</ul>
+		</nav>
+
+		<div class="sn-content">
+
+			<form class="sn-filter" action="find.html" aria-label="새농민 검색 조건">
+				<div class="sn-filter__grid">
+					<div class="sn-filter__field">
+						<label for="m-region" class="sn-finder__label">지역</label>
+						<select id="m-region" name="region" class="krds-form-select large">
+							<option>전체</option>
+							<option>서울</option>
+							<option>부산</option>
+							<option>대구</option>
+							<option>인천</option>
+							<option>광주</option>
+							<option>대전</option>
+							<option>울산</option>
+							<option>세종</option>
+							<option>경기</option>
+							<option>강원</option>
+							<option>충북</option>
+							<option>충남</option>
+							<option>전북</option>
+							<option>전남</option>
+							<option>경북</option>
+							<option>경남</option>
+							<option>제주</option>
+						</select>
+					</div>
+					<div class="sn-filter__field">
+						<label for="m-crop" class="sn-finder__label">주작목</label>
+						<select id="m-crop" name="crop" class="krds-form-select large">
+							<option>전체</option>
+							<option>식량작물(벼·보리 등)</option>
+							<option>과수</option>
+							<option>채소</option>
+							<option>특용작물</option>
+							<option>화훼</option>
+							<option>축산</option>
+							<option>기타</option>
+						</select>
+					</div>
+					<div class="sn-filter__field">
+						<label for="m-year" class="sn-finder__label">수상 연도</label>
+						<select id="m-year" name="year" class="krds-form-select large">
+							<option>전체</option>
+							<option>2026년</option>
+							<option>2025년</option>
+							<option>2024년</option>
+							<option>2023년</option>
+							<option>2022년 이전</option>
+						</select>
+					</div>
+					<div class="sn-filter__field sn-filter__field--kw">
+						<label for="m-keyword" class="sn-finder__label">이름 또는 농장 이름</label>
+						<input id="m-keyword" name="q" type="search" class="krds-input large" placeholder="예) 홍길동, 햇살농장">
+					</div>
+				</div>
+				<div class="sn-filter__btns">
+					<button type="reset" class="krds-btn large tertiary"><i class="svg-icon ico-reset"></i> 초기화</button>
+					<button type="submit" class="krds-btn large primary"><i class="svg-icon ico-sch"></i> 찾기</button>
+				</div>
+			</form>
+
+			<div class="sn-list-head">
+				<p class="sn-total">검색 결과 <strong>1,284</strong>명</p>
+				<label for="m-sort" class="sr-only">정렬</label>
+				<select id="m-sort" class="krds-form-select-sort medium">
+					<option>최근 수상순</option>
+					<option>이름순</option>
+					<option>지역순</option>
+				</select>
+			</div>
+
+			<ul class="sn-members">
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--1" role="img" aria-label="햇살들녘농장 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-success">이달의 새농민</span><span class="sn-member__ym">2026.11 수상</span></div>
+							<p class="sn-member__name">김○○ · 이○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>경기 이천시</dd></div>
+								<div><dt>농장</dt><dd>햇살들녘농장</dd></div>
+								<div><dt>주작목</dt><dd>벼</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--2" role="img" aria-label="감홍과수원 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-success">이달의 새농민</span><span class="sn-member__ym">2026.10 수상</span></div>
+							<p class="sn-member__name">박○○ · 최○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>충북 충주시</dd></div>
+								<div><dt>농장</dt><dd>감홍과수원</dd></div>
+								<div><dt>주작목</dt><dd>사과</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--3" role="img" aria-label="푸른목장 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-success">이달의 새농민</span><span class="sn-member__ym">2026.09 수상</span></div>
+							<p class="sn-member__name">정○○ · 한○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>전남 해남군</dd></div>
+								<div><dt>농장</dt><dd>푸른목장</dd></div>
+								<div><dt>주작목</dt><dd>한우</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--4" role="img" aria-label="귤빛농원 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-point">제61회 본상</span><span class="sn-member__ym">2026.05 수상</span></div>
+							<p class="sn-member__name">강○○ · 오○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>제주 서귀포시</dd></div>
+								<div><dt>농장</dt><dd>귤빛농원</dd></div>
+								<div><dt>주작목</dt><dd>감귤</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--1" role="img" aria-label="곶감마을농원 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-success">이달의 새농민</span><span class="sn-member__ym">2025.12 수상</span></div>
+							<p class="sn-member__name">윤○○ · 서○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>경북 상주시</dd></div>
+								<div><dt>농장</dt><dd>곶감마을농원</dd></div>
+								<div><dt>주작목</dt><dd>감</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--2" role="img" aria-label="고랭지채소농장 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-success">이달의 새농민</span><span class="sn-member__ym">2025.08 수상</span></div>
+							<p class="sn-member__name">조○○ · 임○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>강원 평창군</dd></div>
+								<div><dt>농장</dt><dd>고랭지채소농장</dd></div>
+								<div><dt>주작목</dt><dd>배추</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--3" role="img" aria-label="딸기향기농장 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-success">이달의 새농민</span><span class="sn-member__ym">2025.03 수상</span></div>
+							<p class="sn-member__name">신○○ · 권○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>충남 논산시</dd></div>
+								<div><dt>농장</dt><dd>딸기향기농장</dd></div>
+								<div><dt>주작목</dt><dd>딸기</dd></div>
+							</dl>
+						</div>
+					</li>
+					<li class="sn-member">
+						<div class="sn-member__img sn-ph sn-ph--4" role="img" aria-label="수박골농장 사진 자리"></div>
+						<div class="sn-member__body">
+							<div class="sn-member__badges"><span class="krds-badge bg-light-point">제59회 본상</span><span class="sn-member__ym">2024.07 수상</span></div>
+							<p class="sn-member__name">황○○ · 문○○ <span>부부</span></p>
+							<dl class="sn-member__info">
+								<div><dt>지역</dt><dd>경남 함안군</dd></div>
+								<div><dt>농장</dt><dd>수박골농장</dd></div>
+								<div><dt>주작목</dt><dd>수박</dd></div>
+							</dl>
+						</div>
+					</li>
+			</ul>
+
+			<p class="sn-privacy-note">
+				개인정보 보호를 위해 이름 일부를 가려서 보여드립니다. 연락처 등 자세한 정보는 회원 로그인 후 확인할 수 있습니다.
+			</p>
+
+			<div class="krds-pagination sn-paging">
+				<span class="page-navi prev disabled">이전</span>
+				<div class="page-links">
+					<a class="page-link active" href="#" aria-current="page"><span class="sr-only">현재페이지 </span>1</a>
+					<a class="page-link" href="#">2</a>
+					<a class="page-link" href="#">3</a>
+					<a class="page-link" href="#">4</a>
+					<a class="page-link" href="#">5</a>
+					<span class="page-link link-dot"></span>
+					<a class="page-link" href="#">161</a>
+				</div>
+				<a class="page-navi next" href="#">다음</a>
+			</div>
+		</div>
+	</div>
+</main>

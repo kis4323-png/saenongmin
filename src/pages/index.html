@@ -1,0 +1,207 @@
+<main id="container">
+
+	<!-- 1. 메인 비주얼 + 새농민 찾기 -->
+	<section class="sn-hero" aria-labelledby="hero-title">
+		<div class="inner sn-hero__in">
+			<div class="sn-hero__text">
+				<p class="sn-hero__eyebrow">60년을 함께한 새농민</p>
+				<h2 id="hero-title" class="sn-hero__title">21세기 한국 농업,<br><strong>새농민</strong>이 함께합니다</h2>
+				<p class="sn-hero__desc">자립·과학·협동의 새농민 정신으로<br class="mob-line"> 우리 농업의 내일을 가꿉니다.</p>
+				<div class="sn-hero__btns">
+					<a href="about.html" class="krds-btn xlarge primary">새농민회 소개</a>
+					<a href="awards.html" class="krds-btn xlarge secondary">이달의 수상자 보기</a>
+				</div>
+			</div>
+
+			<form class="sn-finder" action="find.html" aria-labelledby="finder-title">
+				<h3 id="finder-title" class="sn-finder__title">새농민 찾기</h3>
+				<p class="sn-finder__desc">이름, 농장 이름, 주작목으로 전국의 새농민을 찾아보세요.</p>
+				<div class="sn-finder__tabs" role="radiogroup" aria-label="찾기 대상">
+					<label><input type="radio" name="ftype" value="member" checked> <span>새농민 회원</span></label>
+					<label><input type="radio" name="ftype" value="award"> <span>수상자</span></label>
+				</div>
+				<div class="sn-finder__field">
+					<label for="f-region" class="sn-finder__label">지역</label>
+					<select id="f-region" class="krds-form-select large">
+						<option>전체</option><option>서울</option><option>부산</option><option>대구</option><option>인천</option>
+						<option>광주</option><option>대전</option><option>울산</option><option>세종</option><option>경기</option>
+						<option>강원</option><option>충북</option><option>충남</option><option>전북</option><option>전남</option>
+						<option>경북</option><option>경남</option><option>제주</option>
+					</select>
+				</div>
+				<div class="sn-finder__field">
+					<label for="f-keyword" class="sn-finder__label">검색어</label>
+					<input id="f-keyword" type="text" class="krds-input large" placeholder="예) 홍길동, 햇살농장, 사과">
+				</div>
+				<button type="submit" class="krds-btn xlarge primary sn-finder__submit"><i class="svg-icon ico-sch"></i> 찾기</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- 2. 바로가기 -->
+	<section class="sn-quick" aria-labelledby="quick-title">
+		<div class="inner">
+			<h2 id="quick-title" class="sr-only">자주 찾는 메뉴</h2>
+			<ul class="sn-quick__list">
+				<li><a href="find.html"><span class="sn-quick__ico" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="12" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M30 30l10 10" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span>새농민 회원 찾기</a></li>
+				<li><a href="awards.html"><span class="sn-quick__ico" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="19" r="11" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M17 28l-4 14 11-5 11 5-4-14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg></span>이달의 새농민</a></li>
+				<li><a href="archive.html"><span class="sn-quick__ico" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 12h12l4 4h16v22H8z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg></span>업무자료실</a></li>
+				<li><a href="schedule.html"><span class="sn-quick__ico" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="8" y="11" width="32" height="29" rx="3" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M8 20h32M17 7v8M31 7v8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span>행사일정</a></li>
+				<li><a href="#"><span class="sn-quick__ico" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="10" width="34" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M15 30v11M33 30v11" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span>농장간판 신청</a></li>
+				<li><a href="#"><span class="sn-quick__ico" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M19 36V12l20-4v24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><circle cx="14" cy="36" r="5" fill="none" stroke="currentColor" stroke-width="3.5"/><circle cx="34" cy="32" r="5" fill="none" stroke="currentColor" stroke-width="3.5"/></svg></span>새농민의 노래</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 3. 소식 + 행사일정 -->
+	<section class="sn-sect" aria-labelledby="news-title">
+		<div class="inner sn-news-grid">
+			<div class="sn-news">
+				<div class="sn-sect__head">
+					<h2 id="news-title" class="sn-sect__title">새농민 소식</h2>
+				</div>
+				<div class="krds-tab-area layer">
+					<div class="tab line">
+						<ul role="tablist">
+							<li id="tab-news-1" role="tab" aria-selected="true" aria-controls="panel-news-1" class="active">
+								<button type="button" class="btn-tab">공지사항 <i class="sr-only created">선택됨</i></button>
+							</li>
+							<li id="tab-news-2" role="tab" aria-selected="false" aria-controls="panel-news-2">
+								<button type="button" class="btn-tab">중앙회 활동</button>
+							</li>
+							<li id="tab-news-3" role="tab" aria-selected="false" aria-controls="panel-news-3">
+								<button type="button" class="btn-tab">지역 활동</button>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-conts-wrap">
+						<section id="panel-news-1" aria-labelledby="tab-news-1" class="tab-conts active">
+							<h3 class="sr-only">공지사항</h3>
+							<ul class="sn-board">
+								<li><a href="news-view.html"><span class="krds-badge bg-light-primary">공지</span><span class="sn-board__tit">2025년도 공익법인 공시</span><time datetime="2026-04-29">2026.04.29</time></a></li>
+								<li><a href="news-view.html"><span class="sn-board__tit">(성명서) 농협법 개정, 농업인 중심으로</span><time datetime="2026-04-20">2026.04.20</time></a></li>
+								<li><a href="news-view.html"><span class="sn-board__tit">2026년도 (사)한국새농민중앙회 정기총회 개최 안내</span><time datetime="2026-02-12">2026.02.12</time></a></li>
+								<li><a href="news-view.html"><span class="sn-board__tit">2025 한국새농민중앙회 60주년 기념행사 안내</span><time datetime="2025-10-23">2025.10.23</time></a></li>
+							</ul>
+						</section>
+						<section id="panel-news-2" aria-labelledby="tab-news-2" class="tab-conts">
+							<h3 class="sr-only">중앙회 활동</h3>
+							<ul class="sn-board">
+								<li><a href="#"><span class="sn-board__tit">농협 10월 정례조회 참석</span><time datetime="2026-10-12">2026.10.12</time></a></li>
+								<li><a href="#"><span class="sn-board__tit">2026년 이달의 새농민상 시상식</span><time datetime="2026-07-06">2026.07.06</time></a></li>
+								<li><a href="#"><span class="sn-board__tit">제61회 새농민상 본상 후보자 본선심사</span><time datetime="2026-05-24">2026.05.24</time></a></li>
+								<li><a href="#"><span class="sn-board__tit">농협청년농부사관학교 입교식 축하 방문</span><time datetime="2026-05-10">2026.05.10</time></a></li>
+							</ul>
+						</section>
+						<section id="panel-news-3" aria-labelledby="tab-news-3" class="tab-conts">
+							<h3 class="sr-only">지역 활동</h3>
+							<ul class="sn-board">
+								<li><a href="#"><span class="krds-badge bg-light-success">충북</span><span class="sn-board__tit">충주 중원농협 ‘감홍’ 사과 품질 평가회</span><time datetime="2026-10-12">2026.10.12</time></a></li>
+								<li><a href="#"><span class="krds-badge bg-light-success">부산</span><span class="sn-board__tit">부산농협·한국새농민회 농촌 일손돕기</span><time datetime="2026-10-12">2026.10.12</time></a></li>
+								<li><a href="#"><span class="krds-badge bg-light-success">전남</span><span class="sn-board__tit">해남군지부, 복지시설에 ‘사랑의 쌀’ 전달</span><time datetime="2026-10-12">2026.10.12</time></a></li>
+								<li><a href="#"><span class="krds-badge bg-light-success">제주</span><span class="sn-board__tit">제주도회 고문 공적비 제막식</span><time datetime="2026-09-30">2026.09.30</time></a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<a href="news.html" class="krds-btn medium text sn-more">소식 전체보기 <i class="svg-icon ico-angle right"></i></a>
+			</div>
+
+			<aside class="sn-schedule" aria-labelledby="sch-title">
+				<div class="sn-sect__head">
+					<h2 id="sch-title" class="sn-sect__title">행사일정</h2>
+					<span class="sn-schedule__month">2026년 11월</span>
+				</div>
+				<ol class="sn-schedule__list">
+					<li class="is-today">
+						<span class="sn-date"><b>23</b>월</span>
+						<div><p class="sn-schedule__tit">이달의 새농민상 심사위원회</p><p class="sn-schedule__place">농협중앙회 본관</p></div>
+					</li>
+					<li>
+						<span class="sn-date"><b>26</b>목</span>
+						<div><p class="sn-schedule__tit">시·도 회장단 회의</p><p class="sn-schedule__place">사무국 회의실</p></div>
+					</li>
+					<li>
+						<span class="sn-date"><b>28</b>토</span>
+						<div><p class="sn-schedule__tit">전남도회 농업인 한마음 대회</p><p class="sn-schedule__place">나주시 일원</p></div>
+					</li>
+				</ol>
+				<a href="schedule.html" class="krds-btn medium tertiary sn-schedule__all">전체 일정 보기</a>
+			</aside>
+		</div>
+	</section>
+
+	<!-- 4. 이달의 새농민 -->
+	<section class="sn-sect sn-sect--tint" aria-labelledby="award-title">
+		<div class="inner">
+			<div class="sn-sect__head">
+				<div>
+					<h2 id="award-title" class="sn-sect__title">이달의 새농민</h2>
+					<p class="sn-sect__desc">2026년 11월, 땀과 열정으로 우리 농업을 이끄는 새농민을 소개합니다.</p>
+				</div>
+				<a href="awards.html" class="krds-btn medium text">수상자 전체보기 <i class="svg-icon ico-angle right"></i></a>
+			</div>
+			<ul class="sn-award">
+				<li>
+					<a href="awards.html" class="sn-award__card">
+						<div class="sn-award__img sn-ph sn-ph--1" role="img" aria-label="수상자 농장 사진 자리"></div>
+						<div class="sn-award__body">
+							<span class="krds-badge bg-light-success">경기 · 벼</span>
+							<p class="sn-award__name">김○○ · 이○○ 부부</p>
+							<p class="sn-award__farm">햇살들녘농장</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="awards.html" class="sn-award__card">
+						<div class="sn-award__img sn-ph sn-ph--2" role="img" aria-label="수상자 농장 사진 자리"></div>
+						<div class="sn-award__body">
+							<span class="krds-badge bg-light-success">충북 · 사과</span>
+							<p class="sn-award__name">박○○ · 최○○ 부부</p>
+							<p class="sn-award__farm">충주 감홍과수원</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="awards.html" class="sn-award__card">
+						<div class="sn-award__img sn-ph sn-ph--3" role="img" aria-label="수상자 농장 사진 자리"></div>
+						<div class="sn-award__body">
+							<span class="krds-badge bg-light-success">전남 · 한우</span>
+							<p class="sn-award__name">정○○ · 한○○ 부부</p>
+							<p class="sn-award__farm">해남 푸른목장</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="awards.html" class="sn-award__card">
+						<div class="sn-award__img sn-ph sn-ph--4" role="img" aria-label="수상자 농장 사진 자리"></div>
+						<div class="sn-award__body">
+							<span class="krds-badge bg-light-success">제주 · 감귤</span>
+							<p class="sn-award__name">강○○ · 오○○ 부부</p>
+							<p class="sn-award__farm">서귀포 귤빛농원</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 5. 소개 배너 -->
+	<section class="sn-sect" aria-labelledby="about-title">
+		<div class="inner">
+			<div class="sn-about">
+				<div class="sn-about__text">
+					<h2 id="about-title" class="sn-about__title">새농민회는 어떤 곳인가요?</h2>
+					<p>새농민상을 수상한 전국의 선도 농업인이 모여<br class="pc-only"> 농업 발전과 농촌 공동체를 위해 활동하는 단체입니다.</p>
+				</div>
+				<dl class="sn-about__stats">
+					<div><dt>창립</dt><dd><b>60</b>년</dd></div>
+					<div><dt>시·도 조직</dt><dd><b>17</b>개</dd></div>
+					<div><dt>새농민 회원</dt><dd><b>0,000</b>명</dd></div>
+				</dl>
+				<a href="about.html" class="krds-btn large secondary">자세히 보기</a>
+			</div>
+		</div>
+	</section>
+
+</main>

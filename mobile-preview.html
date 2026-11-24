@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>스마트폰 화면 미리보기 | 새농민 시안</title>
+<style>
+	:root { --bg: #eef1f4; --text: #1e2124; --sub: #5f6b76; --frame: #1e2124; }
+	* { box-sizing: border-box; }
+	body { margin: 0; background: var(--bg); color: var(--text); font-family: "Pretendard GOV", "Malgun Gothic", sans-serif; }
+	header { padding: 24px 16px 8px; text-align: center; }
+	h1 { margin: 0; font-size: 24px; }
+	header p { margin: 8px 0 0; color: var(--sub); font-size: 15px; }
+	.wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; padding: 24px 16px 48px; }
+	figure { margin: 0; }
+	.phone {
+		width: 395px; height: 832px; padding: 10px; border-radius: 44px; background: var(--frame);
+		box-shadow: 0 20px 40px rgba(0,0,0,.18);
+	}
+	.phone iframe { width: 375px; height: 812px; border: 0; border-radius: 34px; background: #fff; display: block; }
+	figcaption { margin-top: 12px; text-align: center; font-weight: 700; }
+	figcaption a { color: inherit; }
+	@media (max-width: 440px) {
+		.phone { width: 100%; height: auto; padding: 0; border-radius: 0; background: none; box-shadow: none; }
+		.phone iframe { width: 100%; height: 760px; border-radius: 12px; }
+	}
+</style>
+</head>
+<body>
+<header>
+	<h1>스마트폰 화면 미리보기</h1>
+	<p>각 화면 안에서 스크롤하고 메뉴를 눌러 볼 수 있습니다. (화면 폭 375px 기준)</p>
+</header>
+<main class="wrap">
+	<figure><div class="phone"><iframe src="index.html" title="메인 화면"></iframe></div><figcaption><a href="index.html">메인</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="about.html" title="새농민회 소개" loading="lazy"></iframe></div><figcaption><a href="about.html">새농민회 소개</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="news.html" title="공지사항" loading="lazy"></iframe></div><figcaption><a href="news.html">공지사항</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="activity.html" title="활동소식" loading="lazy"></iframe></div><figcaption><a href="activity.html">활동소식</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="schedule.html" title="행사일정" loading="lazy"></iframe></div><figcaption><a href="schedule.html">행사일정</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="awards.html" title="이달의 새농민" loading="lazy"></iframe></div><figcaption><a href="awards.html">이달의 새농민</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="find.html" title="새농민 회원 찾기" loading="lazy"></iframe></div><figcaption><a href="find.html">회원 찾기</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="archive.html" title="업무자료실" loading="lazy"></iframe></div><figcaption><a href="archive.html">업무자료실</a></figcaption></figure>
+	<figure><div class="phone"><iframe src="open.html" title="자주 묻는 질문" loading="lazy"></iframe></div><figcaption><a href="open.html">자주 묻는 질문</a></figcaption></figure>
+</main>
+</body>
+</html>

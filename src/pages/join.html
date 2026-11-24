@@ -1,0 +1,91 @@
+<main id="container" class="sn-sub sn-auth">
+	<div class="inner">
+		<div class="sn-auth__box sn-auth__box--wide">
+			<h2 class="sn-auth__title">회원가입</h2>
+			<p class="sn-auth__desc">새농민 회원으로 가입하시면 업무자료 내려받기, 회원 정보 열람 등을 이용할 수 있습니다.</p>
+
+			<ol class="krds-step-wrap sn-steps">
+				<li class="done"><span><i class="step">1단계</i><span class="step-tit">약관 동의</span></span></li>
+				<li class="active"><span><em class="sr-only">현재단계</em><i class="step">2단계</i><span class="step-tit">정보 입력</span></span></li>
+				<li><span><i class="step">3단계</i><span class="step-tit">가입 완료</span></span></li>
+			</ol>
+
+			<form class="sn-auth__form" action="#" novalidate>
+				<fieldset class="sn-fs">
+					<legend>기본 정보 <span class="sn-req-note"><b aria-hidden="true">*</b> 필수 입력</span></legend>
+
+					<div class="sn-auth__field">
+						<span class="sn-finder__label">회원 구분 <b class="sn-req" aria-label="필수">*</b></span>
+						<div class="sn-finder__tabs" role="radiogroup" aria-label="회원 구분">
+							<label><input type="radio" name="mtype" value="member" checked> <span>새농민 회원</span></label>
+							<label><input type="radio" name="mtype" value="staff"> <span>농협 직원</span></label>
+						</div>
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-name" class="sn-finder__label">이름 <b class="sn-req" aria-label="필수">*</b></label>
+						<input id="j-name" type="text" class="krds-input large" autocomplete="name">
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-id" class="sn-finder__label">아이디 <b class="sn-req" aria-label="필수">*</b></label>
+						<div class="sn-inline">
+							<input id="j-id" type="text" class="krds-input large" autocomplete="username" aria-describedby="j-id-help">
+							<button type="button" class="krds-btn large secondary">중복 확인</button>
+						</div>
+						<p id="j-id-help" class="sn-help">영문 소문자와 숫자 4~12자</p>
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-pw" class="sn-finder__label">비밀번호 <b class="sn-req" aria-label="필수">*</b></label>
+						<input id="j-pw" type="password" class="krds-input large" autocomplete="new-password" aria-describedby="j-pw-help">
+						<p id="j-pw-help" class="sn-help">영문, 숫자, 특수문자를 섞어 8자 이상</p>
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-pw2" class="sn-finder__label">비밀번호 확인 <b class="sn-req" aria-label="필수">*</b></label>
+						<input id="j-pw2" type="password" class="krds-input large" autocomplete="new-password">
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-phone" class="sn-finder__label">휴대전화 <b class="sn-req" aria-label="필수">*</b></label>
+						<input id="j-phone" type="tel" class="krds-input large" autocomplete="tel" placeholder="010-0000-0000">
+					</div>
+				</fieldset>
+
+				<fieldset class="sn-fs">
+					<legend>새농민 정보 <span class="sn-req-note">회원 찾기에 공개됩니다</span></legend>
+					<div class="sn-grid2">
+						<div class="sn-auth__field">
+							<label for="j-region" class="sn-finder__label">지역</label>
+							<select id="j-region" class="krds-form-select large"><option>선택</option><option>서울</option><option>부산</option><option>대구</option><option>인천</option><option>광주</option><option>대전</option><option>울산</option><option>세종</option><option>경기</option><option>강원</option><option>충북</option><option>충남</option><option>전북</option><option>전남</option><option>경북</option><option>경남</option><option>제주</option></select>
+						</div>
+						<div class="sn-auth__field">
+							<label for="j-crop" class="sn-finder__label">주작목</label>
+							<input id="j-crop" type="text" class="krds-input large" placeholder="예) 사과">
+						</div>
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-farm" class="sn-finder__label">농장 이름</label>
+						<input id="j-farm" type="text" class="krds-input large" placeholder="예) 햇살농장">
+					</div>
+					<div class="sn-auth__field">
+						<label for="j-award" class="sn-finder__label">수상 내역</label>
+						<input id="j-award" type="text" class="krds-input large" placeholder="예) 2026년 11월 이달의 새농민상">
+					</div>
+				</fieldset>
+
+				<fieldset class="sn-fs">
+					<legend>약관 동의</legend>
+					<div class="krds-check-area sn-agree">
+						<div class="krds-form-check"><input type="checkbox" id="agree-all"><label for="agree-all"><strong>전체 동의</strong></label></div>
+						<div class="krds-form-check"><input type="checkbox" id="agree-1" class="sn-agree__item"><label for="agree-1">[필수] 이용약관 동의</label></div>
+						<div class="krds-form-check"><input type="checkbox" id="agree-2" class="sn-agree__item"><label for="agree-2">[필수] 개인정보 수집·이용 동의</label></div>
+						<div class="krds-form-check"><input type="checkbox" id="agree-3" class="sn-agree__item"><label for="agree-3">[선택] 회원 찾기에 농장 정보 공개</label></div>
+					</div>
+				</fieldset>
+
+				<div class="sn-auth__btns">
+					<a href="login.html" class="krds-btn xlarge tertiary">취소</a>
+					<button type="submit" class="krds-btn xlarge primary">가입 신청</button>
+				</div>
+				<p class="sn-help sn-center">새농민 회원은 사무국 확인 후 가입이 승인됩니다. (1~2일 소요)</p>
+			</form>
+		</div>
+	</div>
+</main>

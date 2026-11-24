@@ -1,0 +1,133 @@
+<main id="container" class="sn-sub">
+
+	<div class="sn-sub__top">
+		<div class="inner">
+			<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="home"><a href="index.html" class="txt">홈</a></li><li><a href="open.html" class="txt">열린마당</a></li><li><a href="board.html" class="txt" aria-current="page">자유게시판</a></li>
+				</ol>
+			</nav>
+			<h2 class="sn-sub__title">자유게시판</h2>
+			<p class="sn-sub__desc">새농민 회원들이 영농 정보와 소식을 자유롭게 나누는 공간입니다.</p>
+		</div>
+	</div>
+
+	<div class="inner sn-sub__body">
+
+		<nav class="krds-side-navigation sn-lnb" aria-label="열린마당 메뉴">
+			<h2 class="lnb-tit">열린마당</h2>
+			<ul class="lnb-list">
+				<li class="lnb-item"><a href="open.html" class="lnb-btn lnb-link">자주 묻는 질문</a></li>
+				<li class="lnb-item active"><a href="board.html" class="lnb-btn lnb-link" aria-current="page">자유게시판</a></li>
+			</ul>
+		</nav>
+
+		<nav class="sn-lnb-mobile" aria-label="열린마당 메뉴">
+			<ul>
+				<li><a href="open.html">자주 묻는 질문</a></li>
+				<li><a href="board.html" aria-current="page">자유게시판</a></li>
+			</ul>
+		</nav>
+
+		<div class="sn-content">
+			<div class="sn-notice-box sn-notice-box--soft" role="note">
+				<div class="sn-notice-box__text">
+					<p class="sn-notice-box__tit">누구나 읽을 수 있고, 글쓰기는 회원 로그인 후 가능합니다.</p>
+					<p>광고·비방·개인정보가 담긴 글은 운영 원칙에 따라 삭제될 수 있습니다.</p>
+				</div>
+				<a href="login.html" class="krds-btn medium primary">글쓰기</a>
+			</div>
+
+			<form class="sn-search" action="board.html" role="search">
+				<label for="b-field" class="sr-only">검색 범위</label>
+				<select id="b-field" class="krds-form-select large"><option>제목</option><option>내용</option><option>작성자</option></select>
+				<label for="b-keyword" class="sr-only">검색어</label>
+				<input id="b-keyword" type="search" class="krds-input large" placeholder="검색어를 입력하세요">
+				<button type="submit" class="krds-btn large primary"><i class="svg-icon ico-sch"></i> 검색</button>
+			</form>
+
+			<div class="sn-list-head">
+				<p class="sn-total">전체 <strong>352</strong>건</p>
+				<select class="krds-form-select-sort medium" aria-label="정렬"><option>최신순</option><option>조회순</option><option>댓글순</option></select>
+			</div>
+
+			<div class="krds-table-wrap sn-table sn-table--board">
+				<table class="tbl col data">
+					<caption>자유게시판 목록. 번호, 제목, 작성자, 등록일, 조회수로 구성되어 있습니다.</caption>
+					<colgroup><col class="c-num"><col><col class="c-cate"><col class="c-date"><col class="c-hit"></colgroup>
+					<thead><tr><th scope="col">번호</th><th scope="col">제목</th><th scope="col">작성자</th><th scope="col">등록일</th><th scope="col">조회</th></tr></thead>
+					<tbody>
+						<tr>
+							<td class="t-num">352</td>
+							<td class="t-tit"><a href="#">농장간판 설치 후기 공유합니다</a> <span class="sn-cmt" aria-label="댓글 3개">[3]</span> <span class="sn-new" aria-label="새 글">N</span></td>
+							<td class="t-cate">김○○</td>
+							<td class="t-date">2026.11.20</td>
+							<td class="t-hit">42</td>
+						</tr>
+						<tr>
+							<td class="t-num">351</td>
+							<td class="t-tit"><a href="#">올해 감홍 사과 작황 어떠셨나요?</a> <span class="sn-cmt" aria-label="댓글 8개">[8]</span></td>
+							<td class="t-cate">박○○</td>
+							<td class="t-date">2026.11.18</td>
+							<td class="t-hit">67</td>
+						</tr>
+						<tr>
+							<td class="t-num">350</td>
+							<td class="t-tit"><a href="#">청년농 멘토링 참여하고 싶습니다</a> <span class="sn-cmt" aria-label="댓글 5개">[5]</span></td>
+							<td class="t-cate">이○○</td>
+							<td class="t-date">2026.11.15</td>
+							<td class="t-hit">88</td>
+						</tr>
+						<tr>
+							<td class="t-num">349</td>
+							<td class="t-tit"><a href="#">시·도 회장단 회의 일정 문의</a> <span class="sn-cmt" aria-label="댓글 1개">[1]</span></td>
+							<td class="t-cate">정○○</td>
+							<td class="t-date">2026.11.11</td>
+							<td class="t-hit">35</td>
+						</tr>
+						<tr>
+							<td class="t-num">348</td>
+							<td class="t-tit"><a href="#">새농민의 노래 악보 구할 수 있을까요?</a> <span class="sn-cmt" aria-label="댓글 2개">[2]</span></td>
+							<td class="t-cate">최○○</td>
+							<td class="t-date">2026.11.03</td>
+							<td class="t-hit">51</td>
+						</tr>
+						<tr>
+							<td class="t-num">347</td>
+							<td class="t-tit"><a href="#">겨울철 비닐하우스 관리 노하우</a> <span class="sn-cmt" aria-label="댓글 11개">[11]</span></td>
+							<td class="t-cate">강○○</td>
+							<td class="t-date">2026.10.29</td>
+							<td class="t-hit">120</td>
+						</tr>
+						<tr>
+							<td class="t-num">346</td>
+							<td class="t-tit"><a href="#">60주년 행사 사진 잘 봤습니다</a> <span class="sn-cmt" aria-label="댓글 4개">[4]</span></td>
+							<td class="t-cate">윤○○</td>
+							<td class="t-date">2026.10.25</td>
+							<td class="t-hit">74</td>
+						</tr>
+						<tr>
+							<td class="t-num">345</td>
+							<td class="t-tit"><a href="#">드론 방제 같이 하실 분 (경북)</a> <span class="sn-cmt" aria-label="댓글 6개">[6]</span></td>
+							<td class="t-cate">조○○</td>
+							<td class="t-date">2026.10.20</td>
+							<td class="t-hit">59</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="krds-pagination sn-paging">
+				<span class="page-navi prev disabled">이전</span>
+				<div class="page-links">
+					<a class="page-link active" href="#" aria-current="page"><span class="sr-only">현재페이지 </span>1</a>
+					<a class="page-link" href="#">2</a>
+					<a class="page-link" href="#">3</a>
+					<span class="page-link link-dot"></span>
+					<a class="page-link" href="#">36</a>
+				</div>
+				<a class="page-navi next" href="#">다음</a>
+			</div>
+		</div>
+	</div>
+</main>

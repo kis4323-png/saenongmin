@@ -1,0 +1,213 @@
+<main id="container" class="sn-sub">
+
+	<!-- 서브 상단: 경로 + 제목 -->
+	<div class="sn-sub__top">
+		<div class="inner">
+			<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="home"><a href="index.html" class="txt">홈</a></li>
+					<li><a href="archive.html" class="txt">자료실</a></li>
+					<li><a href="archive.html" class="txt" aria-current="page">새농민회 업무자료</a></li>
+				</ol>
+			</nav>
+			<h2 class="sn-sub__title">새농민회 업무자료</h2>
+			<p class="sn-sub__desc">새농민회 운영에 필요한 현황, 회의자료, 사업계획 등을 모아 두었습니다.</p>
+		</div>
+	</div>
+
+	<div class="inner sn-sub__body">
+
+		<!-- 좌측 메뉴 (PC) -->
+		<nav class="krds-side-navigation sn-lnb" aria-label="자료실 메뉴">
+			<h2 class="lnb-tit">자료실</h2>
+			<ul class="lnb-list">
+				<li class="lnb-item active"><a href="archive.html" class="lnb-btn lnb-link" aria-current="page">새농민회 업무자료</a></li>
+				<li class="lnb-item"><a href="#" class="lnb-btn lnb-link">정관 및 제규정</a></li>
+				<li class="lnb-item"><a href="#" class="lnb-btn lnb-link">영상자료</a></li>
+				<li class="lnb-item"><a href="#" class="lnb-btn lnb-link">새농민의 노래</a></li>
+				<li class="lnb-item"><a href="#" class="lnb-btn lnb-link">농장간판 설치 안내</a></li>
+				<li class="lnb-item"><a href="#" class="lnb-btn lnb-link">서식 자료(공적비 등)</a></li>
+			</ul>
+			<div class="sn-lnb__help">
+				<p class="sn-lnb__help-tit">자료 문의</p>
+				<p>사무국 <a href="tel:0220805611">02-2080-5611</a></p>
+				<p class="sn-lnb__help-time">평일 09시~18시</p>
+			</div>
+		</nav>
+
+		<!-- 좌측 메뉴 (모바일: 가로 스크롤 메뉴) -->
+		<nav class="sn-lnb-mobile" aria-label="자료실 메뉴">
+			<ul>
+				<li><a href="archive.html" aria-current="page">업무자료</a></li>
+				<li><a href="#">정관·규정</a></li>
+				<li><a href="#">영상자료</a></li>
+				<li><a href="#">새농민의 노래</a></li>
+				<li><a href="#">농장간판</a></li>
+				<li><a href="#">서식 자료</a></li>
+			</ul>
+		</nav>
+
+		<!-- 본문 -->
+		<div class="sn-content">
+
+			<!-- 로그인 안내 -->
+			<div class="sn-notice-box" role="note">
+				<span class="sn-notice-box__ico" aria-hidden="true">
+					<svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+				</span>
+				<div class="sn-notice-box__text">
+					<p class="sn-notice-box__tit">자료 목록은 누구나 볼 수 있어요.</p>
+					<p>파일 내려받기는 <strong>새농민 회원·농협 직원 로그인 후</strong> 이용할 수 있습니다.</p>
+				</div>
+				<a href="#" class="krds-btn medium primary">로그인</a>
+			</div>
+
+			<!-- 분류 -->
+			<div class="sn-cate" role="group" aria-label="자료 분류">
+				<button type="button" class="sn-chip is-active" aria-pressed="true">전체 <span>48</span></button>
+				<button type="button" class="sn-chip" aria-pressed="false">현황 <span>9</span></button>
+				<button type="button" class="sn-chip" aria-pressed="false">회의자료 <span>14</span></button>
+				<button type="button" class="sn-chip" aria-pressed="false">사업·결산 <span>12</span></button>
+				<button type="button" class="sn-chip" aria-pressed="false">수상자 명단 <span>8</span></button>
+				<button type="button" class="sn-chip" aria-pressed="false">기타 <span>5</span></button>
+			</div>
+
+			<!-- 검색 -->
+			<form class="sn-search" action="#" role="search">
+				<label for="s-field" class="sr-only">검색 범위</label>
+				<select id="s-field" class="krds-form-select large">
+					<option>제목</option>
+					<option>내용</option>
+					<option>제목+내용</option>
+				</select>
+				<label for="s-keyword" class="sr-only">검색어</label>
+				<input id="s-keyword" type="search" class="krds-input large" placeholder="찾으시는 자료 이름을 입력하세요">
+				<button type="submit" class="krds-btn large primary"><i class="svg-icon ico-sch"></i> 검색</button>
+			</form>
+
+			<div class="sn-list-head">
+				<p class="sn-total">전체 <strong>48</strong>건 <span>(1/5 쪽)</span></p>
+				<label for="s-sort" class="sr-only">정렬</label>
+				<select id="s-sort" class="krds-form-select-sort medium">
+					<option>최신순</option>
+					<option>조회순</option>
+				</select>
+			</div>
+
+			<!-- 목록 -->
+			<div class="krds-table-wrap sn-table">
+				<table class="tbl col data">
+					<caption>새농민회 업무자료 목록. 번호, 분류, 제목, 첨부파일, 등록일, 조회수로 구성되어 있습니다.</caption>
+					<colgroup>
+						<col class="c-num"><col class="c-cate"><col><col class="c-file"><col class="c-date"><col class="c-hit">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">분류</th>
+							<th scope="col">제목</th>
+							<th scope="col">첨부</th>
+							<th scope="col">등록일</th>
+							<th scope="col">조회</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="is-notice">
+							<td class="t-num"><span class="krds-badge bg-light-primary">필독</span></td>
+							<td class="t-cate">기타</td>
+							<td class="t-tit"><a href="archive-view.html">새농민회 업무자료 이용 안내 (회원 로그인 방법)</a></td>
+							<td class="t-file"><span class="sn-file pdf">PDF</span></td>
+							<td class="t-date">2026.03.02</td>
+							<td class="t-hit">1,204</td>
+						</tr>
+						<tr>
+							<td class="t-num">48</td>
+							<td class="t-cate">수상자 명단</td>
+							<td class="t-tit"><a href="archive-view.html">2026년 11월 이달의 새농민상 수상자 명단</a> <span class="sn-new" aria-label="새 글">N</span></td>
+							<td class="t-file"><span class="sn-file hwp">HWP</span></td>
+							<td class="t-date">2026.11.05</td>
+							<td class="t-hit">87</td>
+						</tr>
+						<tr>
+							<td class="t-num">47</td>
+							<td class="t-cate">현황</td>
+							<td class="t-tit"><a href="archive-view.html">2026년 시·도별 새농민회 회원 현황 (10월 말 기준)</a></td>
+							<td class="t-file"><span class="sn-file xls">XLSX</span></td>
+							<td class="t-date">2026.11.03</td>
+							<td class="t-hit">142</td>
+						</tr>
+						<tr>
+							<td class="t-num">46</td>
+							<td class="t-cate">회의자료</td>
+							<td class="t-tit"><a href="archive-view.html">2026년 4분기 시·도 회장단 회의 자료</a></td>
+							<td class="t-file"><span class="sn-file hwp">HWP</span><span class="sn-file pdf">PDF</span></td>
+							<td class="t-date">2026.10.28</td>
+							<td class="t-hit">96</td>
+						</tr>
+						<tr>
+							<td class="t-num">45</td>
+							<td class="t-cate">수상자 명단</td>
+							<td class="t-tit"><a href="archive-view.html">2026년 10월 이달의 새농민상 수상자 명단</a></td>
+							<td class="t-file"><span class="sn-file hwp">HWP</span></td>
+							<td class="t-date">2026.10.26</td>
+							<td class="t-hit">158</td>
+						</tr>
+						<tr>
+							<td class="t-num">44</td>
+							<td class="t-cate">사업·결산</td>
+							<td class="t-tit"><a href="archive-view.html">2027년도 사업계획(안) 수립 지침</a></td>
+							<td class="t-file"><span class="sn-file hwp">HWP</span></td>
+							<td class="t-date">2026.10.14</td>
+							<td class="t-hit">203</td>
+						</tr>
+						<tr>
+							<td class="t-num">43</td>
+							<td class="t-cate">현황</td>
+							<td class="t-tit"><a href="archive-view.html">새농민회 시·도 및 시·군 지회 연락처 현황</a></td>
+							<td class="t-file"><span class="sn-file xls">XLSX</span></td>
+							<td class="t-date">2026.09.22</td>
+							<td class="t-hit">311</td>
+						</tr>
+						<tr>
+							<td class="t-num">42</td>
+							<td class="t-cate">회의자료</td>
+							<td class="t-tit"><a href="archive-view.html">제61회 새농민상 본상 시상식 운영 계획</a></td>
+							<td class="t-file"><span class="sn-file pdf">PDF</span></td>
+							<td class="t-date">2026.08.19</td>
+							<td class="t-hit">187</td>
+						</tr>
+						<tr>
+							<td class="t-num">41</td>
+							<td class="t-cate">사업·결산</td>
+							<td class="t-tit"><a href="archive-view.html">2026년 상반기 사업 추진 실적 보고</a></td>
+							<td class="t-file"><span class="sn-file hwp">HWP</span></td>
+							<td class="t-date">2026.07.15</td>
+							<td class="t-hit">124</td>
+						</tr>
+						<tr>
+							<td class="t-num">40</td>
+							<td class="t-cate">기타</td>
+							<td class="t-tit"><a href="archive-view.html">새농민회 홍보물(리플릿) 인쇄용 원본</a></td>
+							<td class="t-file"><span class="sn-file pdf">PDF</span></td>
+							<td class="t-date">2026.06.30</td>
+							<td class="t-hit">265</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="krds-pagination sn-paging">
+				<span class="page-navi prev disabled">이전</span>
+				<div class="page-links">
+					<a class="page-link active" href="#" aria-current="page"><span class="sr-only">현재페이지 </span>1</a>
+					<a class="page-link" href="#">2</a>
+					<a class="page-link" href="#">3</a>
+					<a class="page-link" href="#">4</a>
+					<a class="page-link" href="#">5</a>
+				</div>
+				<a class="page-navi next" href="#">다음</a>
+			</div>
+
+		</div>
+	</div>
+</main>
